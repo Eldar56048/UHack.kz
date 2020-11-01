@@ -1,0 +1,110 @@
+.blackAndWhite{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.blackAndWhiteInvert,
+.blackAndWhiteInvert img,
+.blackAndWhiteInvert embed,
+.blackAndWhiteInvert video{
+    -webkit-filter: grayscale(100%) invert(100%);
+    -moz-filter: grayscale(100%) invert(100%);
+    -ms-filter: grayscale(100%) invert(100%);
+    -o-filter: grayscale(100%) invert(100%);
+    filter: grayscale(100%) invert(100%);
+}
+
+.triangle {
+    background: url("../img/topTriangle.png") no-repeat;
+    width: 17px;
+    height: 9px;
+    position: absolute;
+    left: 31px;
+    top: -9px;
+}
+.specialViewArea{
+    padding: 10px 20px 20px 20px;
+    /* width: 207px; */
+    left: 0;
+    top: 43px;
+    color: #000;
+}
+.appearance{
+    margin-bottom: 10px;
+    clear: both;
+    display: table;
+    width: 100%;
+}
+.squareBox{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 27px;
+    font-weight: bolder;
+    cursor: pointer;
+    background: #828282;
+    border: 2px solid #353535;
+    color: #fff;
+    border-radius: 30px;
+}
+.specialTitle{
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+}
+.squareAppearances{
+    float: left;
+    margin-right: 13px;
+}
+.squareBox.spcNormal{
+    background: #00a2e0;
+    border-color: #2b9ed9;
+}
+.squareBox.spcWhiteAndBlack{
+    background: #828282;
+    border-color: #828282;
+}
+.squareBox.spcDark{
+    background: #3e3e3e;
+    border-color: #3e3e3e;
+}
+.fontSmaller{
+    font-size: 24px;
+}
+.fontBigger{
+    font-size: 26px;
+}
+
+.defaultSlider{
+    height: 6px !important;
+    background: #b7b7b7;
+    margin-top: 20px;
+    border: none;
+}
+.defaultSlider span{
+    border-radius: 50%;
+    outline: none;
+    background: #fff !important;
+    cursor: pointer !important;
+    top: -7px !important;
+}
+.defaultSlider span:focus, .defaultSlider span:hover{
+    border-color: #d3d3d3;
+}
+.defaultSlider .ui-slider-range{
+    background: #2b9ed9;
+}
+.squareAppearances:last-child {
+    margin-right: 0;
+}
+.squareBox:hover {
+    opacity: 0.7;
+}
+.squareBox.active {
+    text-decoration: underline;
+    font-size: 30px;
+}

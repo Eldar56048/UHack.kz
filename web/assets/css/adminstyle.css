@@ -1,0 +1,504 @@
+
+.box p.message{
+    border: 2px solid #ffa908;
+    border-radius: 3px;
+    padding:10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p.big{
+    font-size: 200px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    text-decoration: none;
+}
+nav{
+    background: #1C75D2;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 33px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul{
+    float: right;
+    margin-right: 60px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 2px;
+}
+nav ul li a{
+    color: #f2f2f2;
+
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+a.active,a:hover{
+    background: grey;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 1170px){
+    label.logo{
+        font-size: 27px;
+        padding-left: 25px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 927px){
+    .checkbtn{
+        display: block;
+        margin-right: 40px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+.box input[type="text"],.box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+    width: 280px;
+    border-color:#2ecc71;
+
+}
+
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+h2.name{
+    font-size: 40px;
+}
+
+.box input[type="submit"]:hover{
+    background: #2ecc71;
+}
+
+
+div.header{
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    border: 2px solid green;
+}
+
+div.all{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+div.row{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+
+    opacity: 0.8;
+
+    margin-top: 20px;
+
+
+}
+
+div.blocks{
+    width: 25%;
+    height: 50px;
+    border: 2px solid #1C75D2 ;
+    border-radius: 3px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+div.blocks2{
+    width: 25%;
+    height: 50px;
+    border-radius: 3px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+div.blocks3{
+    width: 25%;
+    height: 50px;
+
+    border-radius: 3px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+div.blocks1{
+    width: 25%;
+    height: 50px;
+    border: 2px solid #1C75D2 ;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+div.header{
+    width: 25%;
+    height: 50px;
+    color: blue;
+    font-size: 20px;
+    border-radius: 3px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+p.names{
+    font-size: 20px;
+
+}
+form.mard{
+    width: 30%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1C75D2;
+    border-radius: 8px;
+}
+div.bari{
+    padding-top: 100px;
+    width:100%;
+    display: flex;
+    flex-direction: row;background-color: white;
+}
+
+nav.white2{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+input.name1{
+    box-sizing: border-box;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    width: 47.5%;
+    height: 42px;
+    position: relative;
+    margin: 0px 10px 10px 0px;
+    font-weight: bolder;
+    float: left;
+    border-radius: 3px;
+}
+
+select.name1{
+    box-sizing: border-box;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    width: 100%;
+    height: 42px;
+    position: relative;
+    margin: 0px 10px 10px 0px;
+    font-weight: bolder;
+    float: left;
+    border-radius: 3px;
+}
+
+
+input.tema1{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    width: 100%;
+    height: 42px;
+    position: relative;
+    margin: 0px 0px 10px 0;
+    font-weight: bolder;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+}
+
+button.Send1{
+    background-color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin: 0px 0px 20px 0;
+    font-weight: bolder;
+    color: #1C75D2;
+    border-radius: 3px;
+}
+
+button.Send2{
+    background-color: #1C75D2;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin: 0px 0px 20px 0;
+    font-weight: bolder;
+    color: white;
+    border-radius: 3px;
+}
+
+div.all2{
+    padding-top: 100px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea{
+    box-sizing: border-box;
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    margin: 0px 0px 10px 0;
+    font-weight: bolder;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+}
+p.number{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: black;
+}
+
+div.buttons{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+a.buttonupdate{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #1C75D2;
+    padding: 15px;
+    text-align: center;
+    width: 120px;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+
+button.buttondelete{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    background-color: red;
+    padding: 15px;width: 150px;
+}
+div.info{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: left;
+    align-items: center;
+    background-color: #1C75D2;
+    border-radius: 5px;
+}
+div.info1{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: left;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+}
+div.tables{
+    width: 50%;
+    padding: 20px;
+    height: auto;
+    border-radius: 3px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+p.info1{
+    color: #1C75D2;
+    font-size: 20px;
+}
+
+p.info{
+    color: white;
+    font-size: 20px;
+}
+div.tables1{
+    width: 50%;
+    padding: 20px;
+    height: auto;
+    border-radius: 3px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+div.footer{
+    width: 100%;
+    height: 120px;
+}
+a.buttonupdate:hover,button.buttondelete:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
